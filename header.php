@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
-  <title><?php echo get_bloginfo( 'name' ); ?></title>
+  <title>
+    <?php echo get_bloginfo('name'); ?>
+  </title>
   <meta name="description" content="">
   <meta name="author" content="">
 
@@ -26,14 +29,27 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="<?php echo get_bloginfo('template_directory'); ?>/images/favicon.png">
 
-<?php wp_head(); ?>
+  <?php wp_head(); ?>
 </head>
+
 <body>
-<div class="container">
-<a href="<?php echo get_bloginfo( 'wpurl' );?>">
-<h1><?php echo get_bloginfo( 'name' ); ?></h1>
-</a>
+  <div class="container">
 
+      <nav class="column">
+        <a href="<?php echo get_bloginfo('wpurl'); ?>">Home</a>
 
-<p><?php echo get_bloginfo( 'description' ); ?></p>
-</div>
+        <a href="<?php echo get_bloginfo('wpurl'); ?>">Home</a>
+      </nav>
+
+    <div class="row">
+      <a href="<?php echo get_bloginfo('wpurl'); ?>">
+        <h1>
+          <?php echo get_bloginfo('name'); ?>
+        </h1>
+      </a>
+      <p>
+        <?php echo get_bloginfo('description'); ?>
+      </p>
+    </div>
+
+    </div>
